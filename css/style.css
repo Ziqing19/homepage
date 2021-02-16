@@ -1,6 +1,7 @@
 /* background texture */
-body::after {
+#page-top::after {
   background-image: url("../img/background.jpg");
+  background-size: cover;
   content: "";
   position: fixed;
   top: 0;
@@ -13,17 +14,32 @@ body::after {
 
 .bg-primary {
   background-image: url("../img/nav-bar.jpg");
+  background-size: cover;
 }
 
 .resume-section {
   position: relative;
 }
 
+/*!* for photography.html *!*/
+#share3-y {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+#footer7-w {
+  background: linear-gradient(#3b3939, #131313);
+}
+
+.social-list .iconfont-wrapper {
+  opacity: 70%;
+}
 
 /* spin buttons */
 .spin-btn {
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .spin-btn:hover {
@@ -31,23 +47,29 @@ body::after {
   transform: rotate(360deg);
 }
 
-
 /* pop-up contact form */
 .contact-form {
-  display: block;
+  display: none;
   z-index: 3;
   position: fixed;
-  width: 80%;
+  width: 70%;
   height: 80%;
   padding: 30px;
   border: 5px solid rgba(192, 192, 192, 0.3);
 
   top: 10%;
-  left: calc(10% + 150px);
+  left: calc(15% + 135px);
 
   opacity: 0;
   transform: scale(0);
-  transition: .6s ease opacity,.6s ease transform;
+  transition: 0.6s ease opacity, 0.6s ease transform;
+}
+
+@media (max-width: 992px) {
+  .contact-form {
+    width: 80%;
+    left: 10%;
+  }
 }
 
 .contact-form::before {
@@ -80,16 +102,20 @@ body::after {
 }
 
 form {
-  margin-top: -20px;
+  margin-top: -10px;
+  display: flex;
+  flex-flow: column;
+  height: 93%;
 }
 
 form .data {
   height: 45px;
   width: 100%;
-  margin: 40px 0;
+  margin: 30px 0;
+  flex: 0 1 20px;
 }
 
-form .data input{
+form .data input {
   height: 100%;
   width: 100%;
   padding-left: 10px;
@@ -97,15 +123,16 @@ form .data input{
   border: 2px solid silver;
 }
 
-form .data input:focus{
+form .data input:focus {
   border-color: #bd5d38;
   border-bottom-width: 5px;
 }
 
 form .message {
-  height: 320px;
+  height: auto;
   width: 100%;
-  margin: 40px 0;
+  margin: 30px 0;
+  flex: 1 1 auto;
 }
 
 form .message input {
@@ -116,35 +143,38 @@ form .message input {
   border: 2px solid silver;
 }
 
-form .message input:focus{
+form .message input:focus {
   border-color: #bd5d38;
   border-bottom-width: 5px;
 }
 
-form .btn{
-  margin: 30px 0;
-  height: 45px;
+form .btn {
+  height: 25px;
   width: 100%;
-  position: relative;
+  margin-top: 30px;
+  margin-bottom: 0;
+  flex: 0 1 40px;
+  padding: 0 0 0 0;
   overflow: hidden;
 }
 
-form .btn .inner{
+form .btn .inner {
   height: 100%;
-  width: 300%;
-  position: absolute;
-  left: -100%;
+  width: 400%;
   z-index: -1;
-  background: -webkit-linear-gradient(right, #a33c03, #f5d4c4);
-  transition: all .4s;
+  background: -webkit-linear-gradient(right, #f5d4c4, #ee8c4a);
+  transition: all 0.4s;
 }
 
-form .btn:hover .inner{
+form .btn:hover .inner {
+  transform: translateX(-50%);
+}
+
+form .btn button {
+  position: absolute;
   left: 0;
-}
-
-form .btn button{
-  height: 100%;
+  bottom: calc(10% - 43px);
+  height: 25px;
   width: 100%;
   background: none;
   border: none;
@@ -153,4 +183,41 @@ form .btn button{
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  opacity: 80%;
+}
+
+/* photography.html fonts */
+.display-5 {
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.display-7 {
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.col-12 .display-7 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* mobile icon */
+#mobile-icon {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#mobile-icon:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
