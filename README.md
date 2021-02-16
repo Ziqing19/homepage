@@ -25,5 +25,5 @@ In order to run it, you may access it directly by https://ziqing19.github.io/hom
 Moreover, you may clone the repository and run it locally either on your local server, or through a browser (tested on Chrome desktop).
 
 ## Copyright
-This webpage take advantage of templates from [startbootstrap](https://startbootstrap.com/theme/resume/) and [mobirise](https://mobirise.com/bootstrap-template/carousel-template.html).
+This webpage takes advantage of templates from [startbootstrap](https://startbootstrap.com/theme/resume/) and [mobirise](https://mobirise.com/bootstrap-template/carousel-template.html).
 This project is under MIT license. All modified image resources could be distributed with same methods. Photos of myself will be shared with CC 4.0 BY-NC-ND license.
