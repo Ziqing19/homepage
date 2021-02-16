@@ -1,0 +1,29 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "Project 1 of CS5610 Web Development",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ziqing19/homepage.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Bootstrap"
+  ],
+  "author": "Ziqing Mao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ziqing19/homepage/issues"
+  },
+  "homepage": "https://github.com/Ziqing19/homepage#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0"
+  }
+}
