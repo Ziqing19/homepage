@@ -20,7 +20,7 @@ The final product should be of W3C compliance, as well as formatted by eslint an
 TBD
 
 ## Usage
-In order to run it, you may access it directly by https://github.com/Ziqing19/homepage. 
+In order to run it, you may access it directly by https://ziqing19.github.io/homepage/. 
 
 Moreover, you may clone the repository and run it locally either on your local server, or through a browser (tested on Chrome desktop).
 
