@@ -1,0 +1,114 @@
+/* align the timeline section to the middle */
+.section.experience {
+  margin: auto auto 100px;
+  width: 100%;
+}
+
+
+/* global config of timeline section*/
+.section.experience .timeline {
+  align-content: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  z-index: 1;
+  height: 1800px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.section.experience .timeline .timeline-line {
+  height: 0%;
+  width: 8px;
+  background-color: rgba(189, 93, 56, 0.6);
+  position: relative;
+  -webkit-transition: 500ms ease-out;
+  transition: 500ms ease-out;
+}
+
+.section.experience .timeline-cards {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  height: 1800px;
+  position: absolute;
+  overflow: hidden;
+}
+
+
+/* set attributes for each card*/
+.section.experience .timeline-cards .timeline-card {
+  height: 330px;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  border-radius: 50px;
+  border: 5px solid rgba(189, 93, 56, 0.6);
+  opacity: 0;
+  -webkit-transition: 1000ms ease-out;
+  transition: 1000ms ease-out;
+  padding: 15px;
+}
+
+ .date {
+  margin-right: 20px;
+  float: right;
+}
+
+.timeline-card img {
+  position: absolute;
+  bottom: 20px;
+  width: 90px;
+}
+
+.right img {
+  right: 20px;
+}
+
+.left img {
+  left: 20px;
+}
+
+/* for dots*/
+.section.experience .timeline .timeline-dot {
+  background-color: rgb(52, 58, 64);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -6px;
+  border-radius: 15px;
+  opacity: 0;
+  -webkit-transition: 500ms ease-out;
+  transition: 500ms ease-out;
+}
+
+.section.experience .timeline .timeline-dot.dot {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* animation */
+.section.experience .timeline-cards .timeline-card.left.active,
+.section.experience .timeline-cards .timeline-card.right.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.section.experience .timeline-cards .timeline-card.left {
+  left: 3%;
+  transform: translate3d(-250px, 0, 0);
+}
+
+.section.experience .timeline-cards .timeline-card.right {
+  right: 3%;
+  transform: translate3d(250px, 0, 0);
+}
+
+.section.experience .timeline .timeline-dot.active {
+  opacity: 1;
+}
